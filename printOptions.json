@@ -1,0 +1,12 @@
+{
+    "paperSize": "A4",
+    "scale": {
+        "type": "Custom",
+        "score": 84
+    },
+    "margin": "default",
+    "options": {
+        "headersAndFooters": "uncheked",
+        "backgroundGraphics": "checked"
+    }
+}
