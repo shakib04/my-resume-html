@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./assets/css/bs5/bootstrap-reboot.css" />
     <link rel="stylesheet" href="./assets/css/bs5/bootstrap-utilities.css" />
 
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/custom/app.css" />
+
     <style>
         @media print,
         screen {
@@ -129,7 +133,7 @@
         <li>Description: I have worked in Attendance, Leave, Recruitment, Payroll, Procurement, Self-serivces, and
             Report
             Module.</li>
-        <li>Technologies: Java, Spring Boot, Angular, Postgres, Flyway</li>
+        <li class="project-techs">Technologies: Java, Spring Boot, Angular, Postgres, Flyway</li>
     </ul>
     <h3 id="-smart-microfinance-"><strong>
             <icon class="project-check"></icon> Smart Microfinance
@@ -137,7 +141,7 @@
     <ul>
         <li>Description: Worked in Smart Microfinance application, integrating financial modules and
             ensuring regulatory compliance.</li>
-        <li>Technologies: Java, Spring Boot, Angular, ElasticSearch, Redis, RabbitMQ</li>
+        <li class="project-techs">Technologies: Java, Spring Boot, Angular, ElasticSearch, Redis, RabbitMQ</li>
     </ul>
     <h3 id="-books-cabinet-"><strong>
             <icon class="project-check"></icon> Books Cabinet
@@ -150,7 +154,7 @@
                 </li>
             </ul>
         </li>
-        <li>Technologies: Java, Spring Boot, Thymeleaf</li>
+        <li class="project-techs">Technologies: Java, Spring Boot, Thymeleaf</li>
         <li>GitHub Repository: <a href="https://github.com/fesabelilla/Books-Cabinet">Books Cabinet GitHub
                 Repository</a> </li>
     </ul>
@@ -161,7 +165,7 @@
     <ul>
         <li>Description: Contributed to the BRAC Payroll project, implementing payroll processing logic and
             collaborating with stakeholders to meet requirements.</li>
-        <li>Technologies: PHP, MySQL</li>
+        <li class="project-techs">Technologies: PHP, MySQL</li>
     </ul>
     <h2 id="-achievements-"><strong>Achievements</strong></h2>
     <ul>
@@ -194,11 +198,8 @@
     </script>
 
     <script>
-        const experienceYears = "03";
-        const experience = document.getElementsByClassName('experienceYears');
-        for (let i = 0; i < experience.length; i++) {
-            experience[i].innerHTML = experienceYears;
-        }
+        setExperienceYears("03");
+        addCheckIconInProjectList();
     </script>
 
 </body>
