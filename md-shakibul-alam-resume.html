@@ -35,20 +35,29 @@
 
 <body>
 
+    <div class="d-flex justify-content-between">
+        <div id="self-intro" class="col-9">
+            <h1 id="name">
+                <strong>Md. Shakibul Alam</strong>
+            </h1>
+            <h3>Software Engineer | Java | Spring Boot | Angular</h3>
+            <h4><span class="experienceYears"></span> years of experience</h5>
 
-    <div id="self-intro" class="mb-3">
-        <h1 id="name">
-            <strong>Md. Shakibul Alam</strong>
-        </h1>
-        <h3>Software Engineer | Java | Spring Boot | Angular</h3>
-        <h4><span class="experienceYears"></span> years of experience</h5>
+                <p><strong>Badda, Dhaka, Bangladesh</strong> | <strong>Cell: +8801622047400</strong> | <strong>Email:
+                        mdshakibulalam@gmail.com</strong><br><strong>LinkedIn: <a
+                            href="https://www.linkedin.com/in/md-shakibul-alam-067138157/">Md. Shakibul
+                            Alam</a></strong><br><strong>GitHub: <a
+                            href="https://github.com/shakib04">/shakib04</a></strong></p>
+        </div>
+
+        <div class="col-3">
+            <img id="profile-pic"
+            style="position: relative; top: -14px;"
+             alt="" src="./assets/img/md-shakibul-alam-no-bg.png">
+        </div>
     </div>
 
 
-    <p><strong>Badda, Dhaka, Bangladesh</strong> | <strong>Cell: +8801622047400</strong> | <strong>Email:
-            mdshakibulalam@gmail.com</strong><br><strong>LinkedIn: <a
-                href="https://www.linkedin.com/in/md-shakibul-alam-067138157/">Md. Shakibul
-                Alam</a></strong><br><strong>GitHub: <a href="https://github.com/shakib04">/shakib04</a></strong></p>
     <h2 id="summary"><strong>Summary</strong></h2>
     <p>I am a Software Engineer with <strong><span class="experienceYears"></span></strong> years of experience
         specializing in
@@ -189,8 +198,10 @@
         <li><strong>English:</strong> Fluent (written and spoken)</li>
         <li><strong>Bangla:</strong> Native</li>
     </ul>
-    <h2 id="-references-"><strong>References</strong></h2>
-    <p>Available upon request.</p>
+    <!-- <h2 id="-references-"><strong>References</strong></h2>
+    <h3>Md Aminul Islam, PMP, CSM</h3>
+    <p>General Manager & Head of Department, Project Management</p> -->
+
 
 
     <script src="assets/js/custom/app.js">
@@ -200,6 +211,8 @@
     <script>
         setExperienceYears("03");
         addCheckIconInProjectList();
+        
+        customizePicture(document.getElementById("profile-pic"), 280);
     </script>
 
 </body>
