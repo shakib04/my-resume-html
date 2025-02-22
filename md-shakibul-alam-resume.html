@@ -13,6 +13,13 @@
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/custom/app.css"/>
 
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <script src="components/basic-components.js"></script>
+
     <style>
         @media print, screen {
 
@@ -38,15 +45,39 @@
         <h1 id="name">
             <strong>Md. Shakibul Alam</strong>
         </h1>
-        <h3>Software Engineer | Java | Spring Boot | Angular</h3>
-        <h4><span class="experienceYears"></span> years of experience</h4>
+        <h3>Software Engineer | Spring Boot | Angular</h3>
+        <span class="d-flex flex-column fw-bold">
+            <span><i class="fa-solid fa-certificate"></i> <span
+                    class="experienceYears"></span> years of experience </span>
+            <span><i class="fa-solid fa-building"></i> Currently working at BRAC IT Services Limited</span>
+        </span>
 
-        <p>Address: <strong>Dhaka, Bangladesh</strong> <br>
-            Cell: <strong>+8801622047400</strong> <br>
-            Email: <strong>mdshakibulalam@gmail.com</strong><br>
-            LinkedIn: <strong><a href="https://www.linkedin.com/in/md-shakibul-alam-067138157/">Md. Shakibul
-                Alam</a></strong><br>
-            <strong>GitHub: <a href="https://github.com/shakib04">/shakib04</a></strong></p>
+        <div class="row mb-1">
+            <div class="col-md-6">
+                <span class="fw-bold d-flex gap-4">
+                    <span><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</span>
+                    <span><i class="fa-solid fa-phone"></i> +8801622047400</span>
+                </span>
+            </div>
+
+            <div class="col-md-6">
+                <span class="fw-bold d-flex gap-4">
+                    <span><i class="fa-solid fa-envelope"></i> mdshakibulalam@gmail.com</span>
+                    <span><i class="fa-brands fa-linkedin"></i> <a
+                            href="https://www.linkedin.com/in/md-shakibul-alam-067138157/">Md. Shakibul
+                Alam</a></span>
+                </span>
+            </div>
+        </div>
+
+        <div class="row mb-1">
+            <div class="col-md-6">
+                <span class="fw-bold d-flex gap-4">
+                    <span><i class="fa-brands fa-github"></i> <a href="https://github.com/shakib04">/shakib04</a></span>
+                </span>
+            </div>
+        </div>
+
     </div>
 
     <div class="col-3">
@@ -139,63 +170,17 @@
 <ul>
     <li><strong>Languages:</strong> Java, TypeScript, SQL</li>
     <li><strong>Frameworks and Technologies:</strong> Spring Boot, Angular, Hibernate, JUnit, Mockito,
-        RabbitMQ, Webhook Notifcation, Spring Cloud Stream,
+        RabbitMQ, Webhook Notifcation, Spring Cloud Stream, Docker
         Gradle
     </li>
     <li><strong>Databases:</strong> Postgres, ElasticSearch, Redis</li>
     <li><strong>Migration:</strong> Flyway</li>
-    <li><strong>Version Control:</strong> Git, Gitlab</li>
-    <li><strong>Tools:</strong> IntelliJ IDEA, Eclipse, Docker, ELK Log Monitoring, Jira</li>
-</ul>
-<h2 id="projects-"><strong>Projects</strong></h2>
-<h3 id="hr-and-payroll-solution-"><strong>
-    <icon class="project-check"></icon>
-    HR and Payroll Solution
-</strong></h3>
-<ul>
-    <li>Description: I have worked in Attendance, Leave, Recruitment, Payroll, Procurement, Self-serivces, and
-        Report
-        Module.
-    </li>
-    <li class="project-techs">Technologies: Java, Spring Boot, Angular, Postgres, Flyway</li>
-</ul>
-<h3 id="-smart-microfinance-"><strong>
-    <icon class="project-check"></icon>
-    Smart Microfinance
-</strong></h3>
-<ul>
-    <li>Description: Worked in Smart Microfinance application, integrating financial modules and
-        ensuring regulatory compliance.
-    </li>
-    <li class="project-techs">Technologies: Java, Spring Boot, Angular, ElasticSearch, Redis, RabbitMQ</li>
-</ul>
-<h3 id="-books-cabinet-"><strong>
-    <icon class="project-check"></icon>
-    Books Cabinet
-</strong></h3>
-<ul>
-    <li>Description: Co-led the development of the &quot;Books Cabinet&quot; project for the <strong>Therap Java
-        Fest 2021</strong>.
-        <ul>
-            <li>Idea: Reselling used/old books at a reduced price to support others and promote the reuse of books.
-            </li>
-        </ul>
-    </li>
-    <li class="project-techs">Technologies: Java, Spring Boot, Thymeleaf</li>
-    <li>GitHub Repository: <a href="https://github.com/fesabelilla/Books-Cabinet">Books Cabinet GitHub
-        Repository</a></li>
+    <li><strong>Version Control:</strong> Git, Gitlab, Github</li>
+    <li><strong>Tools:</strong> Ubuntu, IntelliJ IDEA, ELK Log Monitoring, Jira</li>
 </ul>
 
-<h3 id="brac-payroll-"><strong>
-    <icon class="project-check"></icon>
-    BRAC Payroll
-</strong></h3>
-<ul>
-    <li>Description: Contributed to the BRAC Payroll project, implementing payroll processing logic and
-        collaborating with stakeholders to meet requirements.
-    </li>
-    <li class="project-techs">Technologies: PHP, MySQL</li>
-</ul>
+<div id="projects-root"></div>
+
 <h2 id="-achievements-"><strong>Achievements</strong></h2>
 <ul>
     <li>Co-led the development of the &quot;Books Cabinet&quot; project in collaboration with another team memeber
@@ -226,7 +211,17 @@
 <p>General Manager & Head of Department, Project Management</p> -->
 
 <!-- custom js -->
-<script src="assets/js/custom/app.js" type="module"></script>
+<script>
+    fetch('components/projects.html') // Path to your HTML file
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('projects-root').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error loading projects.html:', error);
+        });
+</script>
+<script src="app.js" type="module"></script>
 
 </body>
 
