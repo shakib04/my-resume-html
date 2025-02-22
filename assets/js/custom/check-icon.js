@@ -1,5 +1,16 @@
+// adding check icon for project list
+export const addCheckIconInProjectList = () => {
+    const projects = document.getElementsByClassName("project-check");
+    const projectsCopy = Array.from(projects);
+
+    projectsCopy.forEach(function (item) {
+        const projectCheck = createProjectCheckIcon();
+        item.replaceWith(projectCheck);
+    });
+};
+
 function createProjectCheckIcon() {
-    const projectCheck = document.createElement('img');
+    const projectCheck = document.createElement("img");
     projectCheck.src = "./assets/svg/check-solid.svg";
     projectCheck.width = "20";
     projectCheck.height = "20";
@@ -8,5 +19,3 @@ function createProjectCheckIcon() {
 
     return projectCheck;
 }
-
-export { createProjectCheckIcon };
