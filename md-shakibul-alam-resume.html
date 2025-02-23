@@ -18,8 +18,6 @@
           integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-    <script src="components/basic-components.js"></script>
-
     <style>
         @media print, screen {
 
@@ -40,187 +38,28 @@
 
 <body>
 
-<div class="d-flex justify-content-between">
-    <div id="self-intro" class="col-9">
-        <h1 id="name">
-            <strong>Md. Shakibul Alam</strong>
-        </h1>
-        <h3>Software Engineer | Spring Boot | Angular</h3>
-        <span class="d-flex flex-column fw-bold">
-            <span><i class="fa-solid fa-certificate"></i> <span
-                    class="experienceYears"></span> years of experience </span>
-            <span><i class="fa-solid fa-building"></i> Currently working at BRAC IT Services Limited</span>
-        </span>
-
-        <div class="row mb-1">
-            <div class="col-md-6">
-                <span class="fw-bold d-flex gap-4">
-                    <span><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</span>
-                    <span><i class="fa-solid fa-phone"></i> +8801622047400</span>
-                </span>
-            </div>
-
-            <div class="col-md-6">
-                <span class="fw-bold d-flex gap-4">
-                    <span><i class="fa-solid fa-envelope"></i> mdshakibulalam@gmail.com</span>
-                    <span><i class="fa-brands fa-linkedin"></i> <a
-                            href="https://www.linkedin.com/in/md-shakibul-alam-067138157/">Md. Shakibul
-                Alam</a></span>
-                </span>
-            </div>
-        </div>
-
-        <div class="row mb-1">
-            <div class="col-md-6">
-                <span class="fw-bold d-flex gap-4">
-                    <span><i class="fa-brands fa-github"></i> <a href="https://github.com/shakib04">/shakib04</a></span>
-                </span>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="col-3">
-        <img id="profile-pic"
-             onload="customizePicture(this, 270);"
-             style="
-                    /*position: relative;*/
-                    /*top: -44px;*/
-                    /*transform: scale(0.7);*/
-                    /*border-radius: 50%;*/
-                    /*left: 25px;*/
-                   "
-             alt=""
-             src="./assets/img/md-shakibul-alam-no-bg.png">
-    </div>
-</div>
-
-
-<h2 id="summary"><strong>Summary</strong></h2>
-<p>I am a Software Engineer with <strong><span class="experienceYears"></span></strong> years of experience
-    specializing in
-    <strong>Spring Boot and Angular</strong>. I have proven expertise in designing, implementing, and maintaining
-    robust and scalable web applications. I am adept at collaborating with cross-functional teams to deliver
-    high-quality
-    code and achieve project goals.
-</p>
-
-
-<h2 id="professional-experience"><strong>Professional Experience</strong></h2>
-
-<!-- experiences ###-->
-<h4 id="software-engineer-brac-it-services-limited"><strong>Software Engineer | BRAC
-    IT Services Limited, Dhaka</strong></h4>
-<h4> &nbsp;&nbsp; February 2022 - Present</h4>
-<ul>
-    <li>Developed and maintained scalable and high-performance web applications using <strong>Java, Spring Boot, and
-        Angular</strong>.
-    </li>
-    <li>Test Driven Development with <strong>JUnit, Mockito</strong></li>
-    <li>Experience with caching mechanism using Redis.</li>
-    <li>Experience with messaging queue using RabbitMQ, Spring Cloud Stream</li>
-    <li>Worked in the development of the <strong>HR and Payroll Solution</strong> which is a extensive tool for
-        managing HR tasks and
-        Payroll, includes employee self services.
-    </li>
-    <li>Worked in the development of the <strong>Smart Microfinance</strong> application, integrating financial
-        modules,
-        which is running in more than <strong>3200 office of BRAC.</strong></li>
-    <li>Contributed to the <strong>BRAC Payroll</strong> project, implementing payroll processing logic and
-        collaborating with stakeholders to meet requirements.
-    </li>
-    <li>Collaborated with front-end developers to create seamless user experiences using <strong>Angular</strong>.
-    </li>
-    <li>Conducted code reviews to ensure adherence to coding standards and maintainability.</li>
-    <li>Actively participated in <strong>Agile</strong> development methodologies, contributing to sprint planning,
-        daily stand-ups, and retrospectives.
-    </li>
-    <li>Utilized <strong>Git</strong> for version control to manage code efficiently.</li>
-    <li>Responsible for initiating and coordinating live release communication across the team.</li>
-    <li>Conducted technical sessions to share knowledge and updates with the development team.</li>
-    <li>Provided guidance and support to junior team members, fostering a collaborative and learning environment.
-    </li>
-    <!-- <li>Offered real-time support to address and resolve issues during live production.</li> -->
-</ul>
-
-<!-- experiences ###-->
-<!-- <h3 id="intern-brac-it-services-limited-dhaka-october-2021-january-2022-"><strong>Intern | BRAC IT Services
-        Limited, Dhaka | October 2021 - January 2022</strong></h3>
-<ul>
-    <li>Assisted in the development of key features for the <strong>HR and Payroll Solution</strong>.</li>
-    <li>Gained hands-on experience in <strong>Java, Spring Boot, and Angular</strong>.</li>
-    <li>Collaborated with the development team to troubleshoot and resolve issues.</li>
-    <li>Participated in <strong>Agile</strong> development methodologies and learned about the software development
-        life cycle.</li>
-</ul> -->
-
+<!-- self-intro -->
+<div id="self-intro-root"></div>
+<!-- summary -->
+<div id="summary-root"></div>
+<!-- professional-experience ### -->
+<div id="professional-experience-root"></div>
 <!-- education ### -->
-<h2 id="education-"><strong>Education</strong></h2>
-<ul>
-    <li><strong>Bachelor of Science in Software Engineering</strong> | American International University Bangladesh
-        <strong>(AIUB)</strong> | 2018 - 2021
-        <ul>
-            <li><strong>CGPA: 3.59</strong></li>
-        </ul>
-    </li>
-</ul>
-
-
-<h2 id="technical-skills"><strong>Technical Skills & Tools</strong></h2>
-<ul>
-    <li><strong>Languages:</strong> Java, TypeScript, SQL</li>
-    <li><strong>Frameworks and Technologies:</strong> Spring Boot, Angular, Hibernate, JUnit, Mockito,
-        RabbitMQ, Webhook Notifcation, Spring Cloud Stream, Docker
-        Gradle
-    </li>
-    <li><strong>Databases:</strong> Postgres, ElasticSearch, Redis</li>
-    <li><strong>Migration:</strong> Flyway</li>
-    <li><strong>Version Control:</strong> Git, Gitlab, Github</li>
-    <li><strong>Tools:</strong> Ubuntu, IntelliJ IDEA, ELK Log Monitoring, Jira</li>
-</ul>
-
+<div id="education-root"></div>
+<!--technical-skills-->
+<div id="technical-skills-root"></div>
+<!--projects-->
 <div id="projects-root"></div>
-
-<h2 id="-achievements-"><strong>Achievements</strong></h2>
-<ul>
-    <li>Co-led the development of the &quot;Books Cabinet&quot; project in collaboration with another team memeber
-        for the
-        <strong>Therap Java Fest 2021</strong>.
-        <ul>
-            <li>The project was selected as one of the top 10 projects in the contest.</li>
-            <li>Team Name: Team Double-A</li>
-        </ul>
-    </li>
-</ul>
-<h2 id="-online-courses-and-skills-"><strong>Online Courses and Skills</strong></h2>
-<ul>
-    <li>Completed various online courses on platforms like <strong>Udemy, LinkedIn Learning, and Youtube</strong>,
-        covering topics such as Software Engineering, Web Development Essentials topics.
-    </li>
-    <li>Developed skills in <strong>TypeScript, ElasticSearch</strong> through self-directed learning and
-        practical application.
-    </li>
-</ul>
-<h2 id="-language-proficiency-"><strong>Language Proficiency</strong></h2>
-<ul>
-    <li><strong>English:</strong> Fluent (written and spoken)</li>
-    <li><strong>Bangla:</strong> Native</li>
-</ul>
-<!-- <h2 id="-references-"><strong>References</strong></h2>
-<h3>Md Aminul Islam, PMP, CSM</h3>
-<p>General Manager & Head of Department, Project Management</p> -->
+<!--achievements-->
+<div id="achievements-root"></div>
+<!--courses-and-certificate-->
+<div id="courses-and-certificate-root"></div>
+<!--language-->
+<div id="language-root"></div>
+<!--references-->
+<div id="references-root"></div>
 
 <!-- custom js -->
-<script>
-    fetch('components/projects.html') // Path to your HTML file
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('projects-root').innerHTML = html;
-        })
-        .catch(error => {
-            console.error('Error loading projects.html:', error);
-        });
-</script>
 <script src="app.js" type="module"></script>
 
 </body>
