@@ -8,7 +8,7 @@ const componentsLoaded = await loadComponents();
 if (componentsLoaded) { // Check if components loaded successfully
     setExperienceYears("03");
     addCheckIconInProjectList();
-    customizePicture(document.getElementById("profile-pic"), 280);
+    customizePicture(document.getElementById("profile-pic"), 250);
     // ... any other code that depends on the components being loaded ...
 } else {
     // Handle the error, e.g., display a message to the user
