@@ -24,11 +24,11 @@ async function loadComponents() { // Make the function async
                         document.getElementById(rootId).innerHTML = html;
                     })
                     .catch(error => {
-                        console.error('Error loading:', filename, error);
+                        console.warn('Error loading:', filename, error);
                         // Important: Handle errors!  Provide default content or re-throw.
                         // Example:
                         // return Promise.resolve("<p>Error loading component.</p>");
-                        throw error; // Re-throw to reject the Promise.all()
+                        //throw error; // Re-throw to reject the Promise.all()
                     })
             );
         }
