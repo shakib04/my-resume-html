@@ -1,14 +1,14 @@
 const components = {
-    'self-intro.html': 'self-intro-root',
-    'summary.html': 'summary-root',
-    'professional-experience.html': 'professional-experience-root',
-    'education.html': 'education-root',
-    'technical-skills.html': 'technical-skills-root',
-    'projects.html': 'projects-root',
-    'achievements.html': 'achievements-root',
-    'courses-and-certificate.html': 'courses-and-certificate-root',
-    'language.html': 'language-root',
-    'references.html': 'references-root',
+    'self-intro.html': 'self-intro',
+    'summary.html': 'summary',
+    'professional-experience.html': 'professional-experience',
+    'education.html': 'education',
+    'technical-skills.html': 'technical-skills',
+    'projects.html': 'projects',
+    'achievements.html': 'achievements',
+    'courses-and-certificate.html': 'courses-and-certificate',
+    'language.html': 'language',
+    'references.html': 'references',
 }
 
 async function loadComponents() { // Make the function async
@@ -16,7 +16,7 @@ async function loadComponents() { // Make the function async
 
     for (const filename in components) {
         if (components.hasOwnProperty(filename)) {
-            const rootId = components[filename];
+            const rootId = 'root-' + components[filename]; // Get the corresponding root ID
             promises.push( // Add each promise to the array
                 fetch('components/' + filename)
                     .then(response => response.text())
