@@ -1,3 +1,25 @@
 .project-techs {
     font-weight: 500;
 }
+
+@media print, screen {
+
+    /* Style for the heading */
+    h2 {
+        display: inline-block;
+        padding: 0.2em 0.5em;
+        /* Adjust padding for spacing around text */
+        background-color: #C2DDDE;
+        /* Light gray background color for the heading */
+        color: #000;
+        /* Black text color */
+    }
+
+    .table-striped > tbody > tr > td {
+        padding: 3px;
+    }
+}
+
+/*:root {*/
+/*    --header-scale-factor: 0.2; !* Change this value to adjust the scaling (e.g., 0.8 for 20% reduction) *!*/
+/*}*/

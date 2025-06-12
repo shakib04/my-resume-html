@@ -7,8 +7,8 @@ const components = {
     'projects.html': 'projects',
     'achievements.html': 'achievements',
     'courses-and-certificate.html': 'courses-and-certificate',
-    'language.html': 'language',
-    'references.html': 'references',
+    // 'language.html': 'language',
+    // 'references.html': 'references',
 }
 
 async function loadComponents() { // Make the function async
