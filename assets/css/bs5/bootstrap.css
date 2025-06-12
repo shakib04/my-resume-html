@@ -236,7 +236,7 @@ h2, .h2 {
 }
 @media (min-width: 1200px), print {
   h2, .h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 

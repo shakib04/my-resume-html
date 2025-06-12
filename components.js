@@ -2,26 +2,34 @@ const components = {
     'self-intro.html': 'self-intro',
     'summary.html': 'summary',
     'professional-experience.html': 'professional-experience',
-    'education.html': 'education',
-    'technical-skills.html': 'technical-skills',
     'projects.html': 'projects',
+    'technical-skills.html': 'technical-skills',
+    'education.html': 'education',
     'achievements.html': 'achievements',
     'courses-and-certificate.html': 'courses-and-certificate',
     // 'language.html': 'language',
     // 'references.html': 'references',
 }
 
+const rootElement = document.getElementById('root'); // Get the root element
+
 async function loadComponents() { // Make the function async
     const promises = []; // Array to store fetch promises
 
     for (const filename in components) {
         if (components.hasOwnProperty(filename)) {
-            const rootId = 'root-' + components[filename]; // Get the corresponding root ID
+            // create section elements for each component
+            const tempId = 'root-' + components[filename]; // Get the corresponding root ID
+            const sectionElem = document.createElement('div');
+            sectionElem.setAttribute('id', tempId);
+            rootElement.appendChild(sectionElem); // Append the section element to the root
+
+            // Fetch each component and insert its HTML into the corresponding section
             promises.push( // Add each promise to the array
                 fetch('components/' + filename)
                     .then(response => response.text())
                     .then(html => {
-                        document.getElementById(rootId).innerHTML = html;
+                        document.getElementById(tempId).innerHTML = html;
                     })
                     .catch(error => {
                         console.warn('Error loading:', filename, error);
