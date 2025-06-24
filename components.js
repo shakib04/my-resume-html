@@ -2,8 +2,8 @@ const components = {
     'self-intro.html': 'self-intro',
     'summary.html': 'summary',
     'professional-experience.html': 'professional-experience',
-    'projects.html': 'projects',
     'technical-skills.html': 'technical-skills',
+    'projects.html': 'projects',
     'education.html': 'education',
     'achievements.html': 'achievements',
     'courses-and-certificate.html': 'courses-and-certificate',
@@ -15,6 +15,7 @@ const rootElement = document.getElementById('root'); // Get the root element
 
 async function loadComponents() { // Make the function async
     const promises = []; // Array to store fetch promises
+    rootElement.innerHTML = ''; // Clear the root element before loading components
 
     for (const filename in components) {
         if (components.hasOwnProperty(filename)) {
