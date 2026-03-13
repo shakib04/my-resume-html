@@ -1,0 +1,1 @@
+export const yearsOfExperience = "4.2";

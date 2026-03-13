@@ -1,1 +1,0 @@
-export const expYears = "3.5";
