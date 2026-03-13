@@ -1,29 +1,70 @@
-<div class="cv-template background-color-white border-1px">
+<style>
+  .cv-template {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+  }
+  .cv-row {
+    margin-bottom: 25px;
+  }
+  .cv-bold {
+    font-weight: 700;
+    font-size: 18px;
+    color: #008080;
+    text-transform: uppercase;
+    border-bottom: 2px solid #008080;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  .cv-template a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .cv-template a:hover {
+    text-decoration: underline;
+  }
+  .w-richtext ul {
+    padding-left: 20px;
+    margin: 5px 0;
+  }
+  .w-richtext li {
+    margin-bottom: 5px;
+  }
+</style>
+
+<div class="cv-template">
   <div class="cv-row">
     <div class="cv-bold">Contact Information</div>
-    <div>Md. Shakibul Alam</div>
-    <div>mdshakibulalam@gmail.com • +8801622047400 • linkedin.com/in/md-shakibul-alam-067138157 • Dhaka, Bangladesh</div>
+    <div style="font-weight: bold; font-size: 24px;">Md. Shakibul Alam</div>
+    <div>
+      <a href="mailto:mdshakibulalam@gmail.com">mdshakibulalam@gmail.com</a> •
+      <a href="tel:+8801622047400">+8801622047400</a> •
+      <a href="https://www.linkedin.com/in/md-shakibul-alam-067138157/" target="_blank">LinkedIn</a> •
+      Dhaka, Bangladesh
+    </div>
   </div>
 
   <div class="cv-row">
     <div class="cv-bold">Resume Summary</div>
     <div class="w-richtext">
-      Software Engineer with 4.2 years of experience developing scalable applications using Java (Spring Boot) and Angular for large-scale distributed systems. Expert in Fin-Tech, HR Management Solutions, and Microservices with proven success optimizing system performance and delivering high-quality code. Skilled in Test Driven Development (TDD) and Agile methodologies, seeking to leverage cutting-edge software development capabilities to drive innovation and deliver high-impact solutions.
+      Software Engineer with 4.2 years of experience developing scalable applications using Java (Spring Boot) and Angular. Expert in Fin-Tech, HR Management Solutions, and Microservices with proven success optimizing system performance. Skilled in TDD and Agile, seeking to leverage technical expertise to deliver high-impact solutions.
     </div>
   </div>
 
   <div class="cv-row">
     <div class="cv-bold">Work Experience</div>
-    <div><strong>BRAC IT Services Limited</strong></div>
-    <div>Software Engineer • February 2022 • Present</div>
-    <div>Dhaka, Bangladesh</div>
+    <div><strong>BRAC IT Services Limited</strong> | Software Engineer | 02/2022 – Present</div>
     <div class="w-richtext">
       <ul>
-        <li>Developed and maintained an ERP application for microfinance, successfully integrated into 3500+ BRAC NGO offices across the country.</li>
-        <li>Engineered a Webhook Notification System handling 100k+ daily notifications for 3rd party clients using Spring Cloud Stream and RabbitMQ.</li>
-        <li>Built comprehensive HR and Payroll modules, including salary generation, tax management, and provident fund systems, improving administrative efficiency.</li>
-        <li>Implemented high-performance messaging and caching strategies using RabbitMQ and Redis to ensure system reliability and low latency.</li>
-        <li>Guided and mentored junior team members and led live release communications to ensure seamless deployment cycles.</li>
+        <li>Developed and maintained ERP microfinance modules for 3500+ BRAC NGO offices.</li>
+        <li>Engineered a Webhook Notification System processing 100k+ daily notifications via Spring Cloud Stream and RabbitMQ.</li>
+        <li>Built extensive HR and Payroll modules including salary and tax management systems.</li>
+        <li>Implemented high-performance caching strategies using Redis for optimized system reliability.</li>
       </ul>
     </div>
   </div>
@@ -31,39 +72,22 @@
   <div class="cv-row">
     <div class="cv-bold">Resume Skills</div>
     <div class="w-richtext">
-      <li>Software Development & Programming</li>
-      <li>Java, TypeScript, SQL</li>
-      <li>Data Structures & Algorithms</li>
-      <li>Spring Boot, Angular, Hibernate</li>
-      <li>System Design & Microservices Architecture</li>
-      <li>Git, GitLab, GitHub</li>
-      <li>Problem Solving & Analytical Thinking</li>
-      <li>PostgreSQL, MySQL, MongoDB, Redis</li>
-      <li>JUnit, Mockito (Test Driven Development)</li>
-      <li>Docker, Gradle, Flyway DB Migration</li>
-      <li>Collaboration & Agile Methodologies</li>
-      <li>ELK Log Monitoring & Jira</li>
+      <li><strong>Languages:</strong> Java, TypeScript, SQL</li>
+      <li><strong>Frameworks:</strong> Spring Boot, Angular, Hibernate</li>
+      <li><strong>Architecture:</strong> Microservices, System Design</li>
+      <li><strong>Tools/DB:</strong> Git, Docker, Gradle, PostgreSQL, MySQL, Redis, RabbitMQ</li>
     </div>
   </div>
 
   <div class="cv-row">
     <div class="cv-bold">Achievements & Projects</div>
-    <div><strong>Top 10 Project - Books Cabinet</strong></div>
-    <div>Therap Java Fest • 2021</div>
-    <div><strong>Inventory Management (Microservice)</strong></div>
-    <div>Self-Directed Project • GitHub: /shakib04/inventory-management-microservice-spring-boot</div>
+    <div><strong>Top 10 Project - Books Cabinet</strong> (Therap Java Fest 2021)</div>
+    <div><strong><a href="https://github.com/shakib04/inventory-management-microservice-spring-boot" target="_blank">Inventory Management (Microservice)</a></strong> - A self-directed project covering user, product, order, and inventory services.</div>
   </div>
 
   <div class="cv-row">
     <div class="cv-bold">Education</div>
-    <div><strong>B.Sc. in Software Engineering</strong></div>
-    <div>American International University Bangladesh (AIUB)</div>
-    <div>Dhaka, Bangladesh • 2018 • 2021<br></div>
-    <div class="w-richtext">
-      <ul role="list">
-        <li>Major: Software Engineering (CGPA: 3.59/4.00)</li>
-        <li>Key Courses: Software Project Management, Quality & Testing, Advanced Web Programming</li>
-      </ul>
-    </div>
+    <div><strong>B.Sc. in Software Engineering</strong> | AIUB | 2018 – 2021</div>
+    <div>CGPA: 3.59/4.00</div>
   </div>
 </div>
